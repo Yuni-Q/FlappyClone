@@ -26,6 +26,10 @@ struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
 struct RaycastHit2DU5BU5D_tDEABD9FBBA32C695C932A32A1B8FB9C06A496F09;
 // UnityEngine.Rigidbody2D[]
 struct Rigidbody2DU5BU5D_t9CE3D06C92F81A1266F9DDF9BE6180FE19CC5CEF;
+// UnityEngine.Collider2D
+struct Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722;
+// UnityEngine.Object
+struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A;
 // UnityEngine.Rigidbody2D
 struct Rigidbody2D_tD23204FEE9CB4A36737043B97FD409DE05D5DCE5;
 // System.String
@@ -33,10 +37,12 @@ struct String_t;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
 
+IL2CPP_EXTERN_C RuntimeClass* Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ContactPoint2DU5BU5D_t7AE0F95E9BFC90DE859575689AA76B503D433277_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t61A36FEC0532A7CC39DB1770BFA5C1967348FAC1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Physics2D_t1C1ECE6BA2F958C5C1440DDB9E9A5DAAA8F86D92_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PhysicsScene2D_tB68D090292BC3369F94CBB7496FE96EB00853E48_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral21ACE806CE655297BC379B3AD17E97F0A68B6AEC;
@@ -1485,6 +1491,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene2D_RaycastList_Internal_I
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene2D_GetRayIntersectionArray_Internal_m44D4B8638806360B19BDCFDCC090C1AD1267539E (PhysicsScene2D_tB68D090292BC3369F94CBB7496FE96EB00853E48  ___physicsScene0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___origin1, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction2, float ___distance3, int32_t ___layerMask4, RaycastHit2DU5BU5D_tDEABD9FBBA32C695C932A32A1B8FB9C06A496F09* ___results5, const RuntimeMethod* method);
 // System.Int32 UnityEngine.PhysicsScene2D::GetRayIntersectionArray_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.RaycastHit2D[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene2D_GetRayIntersectionArray_Internal_Injected_mAF80210771484878DF20775EE91ADF1D19CCA99D (PhysicsScene2D_tB68D090292BC3369F94CBB7496FE96EB00853E48 * ___physicsScene0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___origin1, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___direction2, float ___distance3, int32_t ___layerMask4, RaycastHit2DU5BU5D_tDEABD9FBBA32C695C932A32A1B8FB9C06A496F09* ___results5, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_point()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_normal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637 (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method);
+// System.Single UnityEngine.RaycastHit2D::get_distance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662 (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method);
+// UnityEngine.Object UnityEngine.Object::FindObjectFromInstanceID(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * Object_FindObjectFromInstanceID_m0AD731D3F583CBBDC7DC0E08B38F742B447FA44A (int32_t ___instanceID0, const RuntimeMethod* method);
+// UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563 (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody2D::set_velocity_Injected(UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody2D_set_velocity_Injected_m198FAA0E7A328E1B236FC5835C9711987D3C691E (Rigidbody2D_tD23204FEE9CB4A36737043B97FD409DE05D5DCE5 * __this, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * ___value0, const RuntimeMethod* method);
 #ifdef __clang__
@@ -2927,6 +2943,114 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene2D_GetRayIntersectionArra
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_point()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method)
+{
+	Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_0 = __this->get_m_Point_1();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 *>(__this + _offset);
+	Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  _returnValue;
+	_returnValue = RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE(_thisAdjusted, method);
+	return _returnValue;
+}
+// UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_normal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637 (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method)
+{
+	Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_0 = __this->get_m_Normal_2();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 *>(__this + _offset);
+	Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  _returnValue;
+	_returnValue = RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Single UnityEngine.RaycastHit2D::get_distance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662 (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_m_Distance_3();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  float RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 *>(__this + _offset);
+	float _returnValue;
+	_returnValue = RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662(_thisAdjusted, method);
+	return _returnValue;
+}
+// UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563 (RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * V_0 = NULL;
+	{
+		int32_t L_0 = __this->get_m_Collider_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * L_1;
+		L_1 = Object_FindObjectFromInstanceID_m0AD731D3F583CBBDC7DC0E08B38F742B447FA44A(L_0, /*hidden argument*/NULL);
+		V_0 = ((Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 *)IsInstClass((RuntimeObject*)L_1, Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722_il2cpp_TypeInfo_var));
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C  Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t210878DAEBC96C1F69DF9883C454758724A106A4 *>(__this + _offset);
+	Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * _returnValue;
+	_returnValue = RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563(_thisAdjusted, method);
+	return _returnValue;
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
